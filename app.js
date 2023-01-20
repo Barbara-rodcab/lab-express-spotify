@@ -1,17 +1,9 @@
-require('dotenv').config();
-
 const express = require('express');
 const hbs = require('hbs');
 
-// require spotify-web-api-node package here:
+require("./config/dotenv.config");  // Llamo dotenv aquí
+require("./config/spotify.config"); // Llamo spotify-api aquí
 
-const app = express();
-
-app.set('view engine', 'hbs');
-app.set('views', __dirname + '/views');
-app.use(express.static(__dirname + '/public'));
-
-// setting the spotify-api goes here:
 
 // Our routes go here:
 
